@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="gatinho">
+  <ellipse cx="100" cy="182" rx="58" ry="8" fill="#3a1a32" opacity=".12"/>
+
+  <path d="M40 150 C28 120 32 72 46 44 L70 70 C88 64 112 64 130 70 L154 44 C168 72 172 120 160 150 C150 172 50 172 40 150Z" fill="#fff4ec" stroke="#3a1a32" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M50 58 L64 72 L52 80Z" fill="#ffb3cf"/><path d="M150 58 L136 72 L148 80Z" fill="#ffb3cf"/>
+  <path d="M122 72 C132 90 150 92 158 88" fill="none" stroke="#f3b27a" stroke-width="10" stroke-linecap="round" opacity=".7"/>
+  <ellipse cx="66" cy="96" rx="16" ry="9" fill="#fff" opacity=".55" transform="rotate(-30 66 96)"/>
+  
+  <g>
+    <ellipse cx="71.4" cy="118" rx="6.6000000000000005" ry="8.25" fill="#3a1a32"/>
+    <ellipse cx="128.6" cy="118" rx="6.6000000000000005" ry="8.25" fill="#3a1a32"/>
+    <circle cx="73.60000000000001" cy="114.7" r="2.4200000000000004" fill="#fff"/>
+    <circle cx="130.79999999999998" cy="114.7" r="2.4200000000000004" fill="#fff"/>
+    <ellipse cx="62.60000000000001" cy="131.2" rx="8.8" ry="4.95" fill="#ff8fb8" opacity=".75"/>
+    <ellipse cx="137.4" cy="131.2" rx="8.8" ry="4.95" fill="#ff8fb8" opacity=".75"/>
+    <path d="M92.3 126.8 q3.8500000000000005 5.5 7.700000000000001 0 q3.8500000000000005 5.5 7.700000000000001 0" fill="none" stroke="#3a1a32" stroke-width="3.3000000000000003" stroke-linecap="round"/>
+  </g>
+
+</svg>

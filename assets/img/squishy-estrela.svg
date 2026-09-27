@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="estrela">
+  <ellipse cx="100" cy="182" rx="58" ry="8" fill="#3a1a32" opacity=".12"/>
+
+  <path d="M100 24 C108 24 112 56 124 64 C136 72 172 64 174 76 C176 88 146 102 142 116 C138 130 156 164 146 170 C136 178 112 150 100 150 C88 150 64 178 54 170 C44 164 62 130 58 116 C54 102 24 88 26 76 C28 64 64 72 76 64 C88 56 92 24 100 24Z" fill="#ffd84d" stroke="#3a1a32" stroke-width="4" stroke-linejoin="round"/>
+  <ellipse cx="80" cy="70" rx="10" ry="6" fill="#fff" opacity=".55" transform="rotate(-30 80 70)"/>
+  
+  <g>
+    <ellipse cx="80" cy="102" rx="6" ry="7.5" fill="#3a1a32"/>
+    <ellipse cx="120" cy="102" rx="6" ry="7.5" fill="#3a1a32"/>
+    <circle cx="82" cy="99" r="2.2" fill="#fff"/>
+    <circle cx="122" cy="99" r="2.2" fill="#fff"/>
+    <ellipse cx="72" cy="114" rx="8" ry="4.5" fill="#ff8fb8" opacity=".75"/>
+    <ellipse cx="128" cy="114" rx="8" ry="4.5" fill="#ff8fb8" opacity=".75"/>
+    <path d="M93 110 q3.5 5 7 0 q3.5 5 7 0" fill="none" stroke="#3a1a32" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+</svg>

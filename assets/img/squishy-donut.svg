@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="donut">
+  <ellipse cx="100" cy="182" rx="58" ry="8" fill="#3a1a32" opacity=".12"/>
+
+  <circle cx="100" cy="106" r="72" fill="#f2b56b" stroke="#3a1a32" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M34 100 C30 60 70 36 100 38 C140 36 172 62 166 104 C170 118 156 124 150 132 C140 150 128 138 118 152 C104 164 92 146 80 156 C66 162 60 142 48 140 C34 138 36 118 34 100Z" fill="#ff8fc6" stroke="#3a1a32" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="52" y="70" width="12" height="4" rx="2" fill="#7ad7ff" transform="rotate(30 52 70)"/><rect x="80" y="52" width="12" height="4" rx="2" fill="#ffe27a" transform="rotate(-20 80 52)"/><rect x="128" y="56" width="12" height="4" rx="2" fill="#b754e7" transform="rotate(40 128 56)"/><rect x="150" y="86" width="12" height="4" rx="2" fill="#7ad7ff" transform="rotate(-40 150 86)"/><rect x="44" y="110" width="12" height="4" rx="2" fill="#ffe27a" transform="rotate(70 44 110)"/><rect x="150" y="124" width="12" height="4" rx="2" fill="#b754e7" transform="rotate(10 150 124)"/><rect x="70" y="150" width="12" height="4" rx="2" fill="#7ad7ff" transform="rotate(-30 70 150)"/><rect x="122" y="150" width="12" height="4" rx="2" fill="#ffe27a" transform="rotate(50 122 150)"/>
+  <ellipse cx="62" cy="76" rx="16" ry="9" fill="#fff" opacity=".55" transform="rotate(-30 62 76)"/>
+  
+  <g>
+    <ellipse cx="72.7" cy="100" rx="6.300000000000001" ry="7.875" fill="#3a1a32"/>
+    <ellipse cx="127.3" cy="100" rx="6.300000000000001" ry="7.875" fill="#3a1a32"/>
+    <circle cx="74.8" cy="96.85" r="2.3100000000000005" fill="#fff"/>
+    <circle cx="129.4" cy="96.85" r="2.3100000000000005" fill="#fff"/>
+    <ellipse cx="64.3" cy="112.6" rx="8.4" ry="4.7250000000000005" fill="#ff8fb8" opacity=".75"/>
+    <ellipse cx="135.7" cy="112.6" rx="8.4" ry="4.7250000000000005" fill="#ff8fb8" opacity=".75"/>
+    <path d="M92.65 108.4 q3.6750000000000003 5.25 7.3500000000000005 0 q3.6750000000000003 5.25 7.3500000000000005 0" fill="none" stroke="#3a1a32" stroke-width="3.1500000000000004" stroke-linecap="round"/>
+  </g>
+
+</svg>

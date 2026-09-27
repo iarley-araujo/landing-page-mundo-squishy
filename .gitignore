@@ -1,0 +1,12 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.swp
+
+# Arquivos brutos (use só as versões otimizadas em assets/)
+*.MOV
+*.mov
