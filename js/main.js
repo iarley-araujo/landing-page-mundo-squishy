@@ -1,15 +1,9 @@
-/* ==========================================================================
-   Mundo Squishy — interações
-   ========================================================================== */
-
-// >>> CONFIGURE AQUI os links de checkout da sua plataforma (Kiwify, Hotmart, etc.)
 const CONFIG = {
   checkout: {
     basico:   "https://SEU-CHECKOUT/plano-basico",
     completo: "https://SEU-CHECKOUT/pacote-completo",
-    upsell:   "https://SEU-CHECKOUT/pacote-completo-oferta" // oferta do modal (R$ 19,90)
+    upsell:   "https://SEU-CHECKOUT/pacote-completo-oferta"
   },
-  // true = ao clicar no plano básico abre o modal oferecendo o completo com desconto
   mostrarOfertaNoBasico: true
 };
 
@@ -17,11 +11,11 @@ const CONFIG = {
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
-  /* ---------- Ano no rodapé ---------- */
+  // Ano no rodapé
   const ano = $("#ano");
   if (ano) ano.textContent = new Date().getFullYear();
 
-  /* ---------- Header com sombra ao rolar + CTA fixo mobile ---------- */
+  // Header com sombra ao rolar + CTA fixo mobile
   const header = $("#header");
   const sticky = $("#stickyCta");
   const planos = $("#planos");
@@ -39,7 +33,7 @@ const CONFIG = {
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  /* ---------- Animação de entrada ---------- */
+  // Animação de entrada
   const reveals = $$(".reveal");
   if ("IntersectionObserver" in window) {
     const io = new IntersectionObserver((entries) => {
@@ -52,7 +46,7 @@ const CONFIG = {
     reveals.forEach((el) => el.classList.add("is-in"));
   }
 
-  /* ---------- Contador animado ---------- */
+  // Contador animado
   $$("[data-count]").forEach((el) => {
     const alvo = +el.dataset.count;
     const inicio = performance.now();
@@ -66,7 +60,7 @@ const CONFIG = {
     requestAnimationFrame(tick);
   });
 
-  /* ---------- Vídeo do produto ---------- */
+  // Vídeo do produto
   const video = $("#productVideo");
   if (video) {
     const wrap = video.closest(".video-phone");
@@ -84,7 +78,6 @@ const CONFIG = {
       else { pausadoPeloUsuario = true; video.pause(); }
     });
 
-    // Som: 1º toque liga o áudio e reinicia do começo
     btnSom.addEventListener("click", () => {
       const ligar = video.muted;
       video.muted = !ligar;
@@ -95,7 +88,6 @@ const CONFIG = {
       tocar();
     });
 
-    // Autoplay mudo só quando o vídeo aparece na tela (economiza dados)
     const semMovimento = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if ("IntersectionObserver" in window && !semMovimento) {
       new IntersectionObserver(([e]) => {
@@ -105,13 +97,13 @@ const CONFIG = {
     }
   }
 
-  /* ---------- FAQ: um aberto por vez ---------- */
+  // FAQ: um aberto por vez
   const faqs = $$(".faq details");
   faqs.forEach((d) => d.addEventListener("toggle", () => {
     if (d.open) faqs.forEach((o) => { if (o !== d) o.open = false; });
   }));
 
-  /* ---------- Checkout + modal ---------- */
+  // Checkout + modal
   const modal = $("#upsell");
   let ultimoFoco = null;
 
@@ -130,7 +122,6 @@ const CONFIG = {
   const irParaCheckout = (tipo) => {
     const url = CONFIG.checkout[tipo];
     if (!url) return;
-    // Preserva UTMs da URL atual no checkout
     const destino = new URL(url, location.href);
     new URLSearchParams(location.search).forEach((v, k) => destino.searchParams.set(k, v));
     location.href = destino.toString();
